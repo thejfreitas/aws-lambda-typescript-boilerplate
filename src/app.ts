@@ -1,33 +1,32 @@
 import { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
-import { HTTP } from './utils/types';
-import { getHttpResponseByCode } from './utils';
+import { StatusCode, getStatusPhraseByCode, RequestMethod } from 'ts-http-status-utils';
 
 export const lambdaHandler = async (
   event: APIGatewayProxyEvent,
   context: Context,
 ): Promise<APIGatewayProxyResult> => {
   try {
-    if (event.httpMethod !== HTTP.GET) {
+    if (event.httpMethod !== RequestMethod.GET) {
       return {
-        statusCode: 405,
+        statusCode: StatusCode.METHOD_NOT_ALLOWED,
         headers: {},
         body: JSON.stringify({
-          message: getHttpResponseByCode(405),
+          message: getStatusPhraseByCode(StatusCode.METHOD_NOT_ALLOWED),
         }),
       };
     }
 
     return {
-      statusCode: 200,
+      statusCode: StatusCode.OK,
       body: JSON.stringify({
-        message: 'Ready to start',
+        message: `${getStatusPhraseByCode(StatusCode.OK)} - Ready to start`,
       }),
     };
   } catch (error) {
     console.info(error, context.awsRequestId);
 
     return {
-      statusCode: 500,
+      statusCode: StatusCode.INTERNAL_SERVER_ERROR,
       body: JSON.stringify({
         message: error instanceof Error ? error.stack : JSON.stringify(error, null, 2),
       }),
