@@ -19,6 +19,7 @@
     "aws-sdk": "^2.1073.0",
     "jest": "^27.5.1",
     "prettier": "^2.5.1",
+    "ts-http-status-utils": "^0.1.2",
     "ts-jest": "^27.1.3",
     "ts-loader": "^9.2.6",
     "ts-node": "^10.5.0",
