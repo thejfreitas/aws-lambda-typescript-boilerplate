@@ -13,7 +13,7 @@ const config = {
   },
   devtool: 'source-map',
   resolve: {
-    extensions: ['.ts'],
+    extensions: ['.ts', '.js'],
   },
   target: 'node',
 
