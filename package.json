@@ -1,7 +1,7 @@
 {
   "name": "aws-lambda-typescript-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/app.ts",
   "repository": "git@github.com:thejfreitas/aws-lambda-typescript-boilerplate.git",
   "author": "J. de Freitas",
   "license": "MIT",
