@@ -2904,10 +2904,10 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-ts-http-status-utils@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ts-http-status-utils/-/ts-http-status-utils-1.0.1.tgz#6cc38a46c46fbe1578c7173e89d9ba67cece7ea0"
-  integrity sha512-CdMfX0PKe3iTbfbcny6igPaaW3DVwCn5Ij/Ko3KIn+G/KMP+/p8hMV0uMRlsTGWhwtins77eEaEnbDlZ/JPJuw==
+ts-http-status-utils@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ts-http-status-utils/-/ts-http-status-utils-1.0.2.tgz#e5b845044a7b7b57846612bc5175d5740e1b85a7"
+  integrity sha512-+COfHR2tTEJKXOGvQfTizmtI7YtwaSq4axMjp75vmQ1kHDL6PBxm9jXOJ0/a5MudguX15cBcHQ5oFqGd+e3quw==
 
 ts-jest@^28.0.2:
   version "28.0.2"
