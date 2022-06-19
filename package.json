@@ -18,7 +18,7 @@
     "aws-sam-webpack-plugin": "^0.11.0",
     "aws-sdk": "^2.1123.0",
     "jest": "^28.1.1",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "ts-http-status-utils": "^1.0.2",
     "ts-jest": "^28.0.5",
     "ts-loader": "^9.3.0",
