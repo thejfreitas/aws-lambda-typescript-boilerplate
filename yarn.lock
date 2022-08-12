@@ -1148,10 +1148,10 @@ aws-sam-webpack-plugin@^0.12.0:
     js-yaml "^4.1.0"
     yaml-cfn "^0.3.1"
 
-aws-sdk@^2.1181.0:
-  version "2.1181.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1181.0.tgz#6ec2997881ae3df76e56d7150fc2992f12ce43dc"
-  integrity sha512-AAHSknRFAIjXBA/XNAL7gS79agr1LbS0oGimOJqJauGSJfWNaOpDc7z6OLNUQqGa5Joc3maD5QJcSKp1Pm/deQ==
+aws-sdk@^2.1193.0:
+  version "2.1193.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1193.0.tgz#34d3ed3ea19a776dafd954183588169c6daa4764"
+  integrity sha512-nSbljBZhxNn+LmENc14md+y1Z+U8BUcS1LLlOxeJvjYAkkGbPf29Bl8FvzbRsZuoxtF6N1Mkel3AI5XIx7mkew==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
