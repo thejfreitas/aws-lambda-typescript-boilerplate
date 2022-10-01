@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es6",
     "module": "commonjs",
-    "sourceMap": true,
-    "rootDir": "./src",
+    "lib": ["esnext"],
+    "removeComments": true,
     "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,    
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@src/*": ["./src/*"]
+    },
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
+  "exclude": ["node_modules","dist", "**/*.spec.ts", "**/*.test.ts"]
 }
