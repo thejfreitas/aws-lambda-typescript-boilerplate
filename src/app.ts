@@ -1,6 +1,11 @@
-import { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
+import {
+  APIGatewayProxyEvent,
+  APIGatewayProxyResult,
+  Context,
+  APIGatewayProxyHandler,
+} from 'aws-lambda';
 
-export const lambdaHandler = async (
+export const lambdaHandler: APIGatewayProxyHandler = async (
   event: APIGatewayProxyEvent,
   context: Context,
 ): Promise<APIGatewayProxyResult> => {
