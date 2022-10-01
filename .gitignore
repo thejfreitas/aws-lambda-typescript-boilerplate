@@ -199,3 +199,6 @@ $RECYCLE.BIN/
 
 # temp
 events
+
+# serverless build
+.build
