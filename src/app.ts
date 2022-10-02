@@ -1,33 +1,25 @@
-import {
-  APIGatewayProxyEvent,
-  APIGatewayProxyResult,
-  Context,
-  APIGatewayProxyHandler,
-} from 'aws-lambda';
+import { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from 'aws-lambda';
+import { StatusCode, getStatusPhraseByCode } from 'ts-http-status-utils';
 
-export const lambdaHandler: APIGatewayProxyHandler = async (
-  event: APIGatewayProxyEvent,
+export const lambdaHandler = async (
+  _: APIGatewayProxyEvent,
   context: Context,
 ): Promise<APIGatewayProxyResult> => {
-  let response: APIGatewayProxyResult;
-
   try {
-    response = {
+    return {
+      statusCode: StatusCode.OK,
       body: JSON.stringify({
-        message: `Happy coding!`,
+        message: `${getStatusPhraseByCode(StatusCode.OK)} - Happy coding!`,
       }),
-      statusCode: 200,
     };
   } catch (error) {
-    response = {
+    console.info(error, context.awsRequestId);
+
+    return {
+      statusCode: StatusCode.INTERNAL_SERVER_ERROR,
       body: JSON.stringify({
         message: error instanceof Error ? error.stack : JSON.stringify(error, null, 2),
       }),
-      statusCode: 500,
     };
   }
-
-  console.log('OVER HERE', response);
-
-  return response;
 };
