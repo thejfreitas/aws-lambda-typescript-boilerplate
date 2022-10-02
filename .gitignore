@@ -201,4 +201,4 @@ $RECYCLE.BIN/
 events
 
 # serverless build
-.build
+.build/
