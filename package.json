@@ -24,7 +24,7 @@
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "serverless": "^3.23.0",
-    "serverless-offline": "^11.1.2",
+    "serverless-offline": "^11.2.3",
     "serverless-plugin-typescript": "^2.1.4",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
