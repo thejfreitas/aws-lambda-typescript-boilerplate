@@ -6,7 +6,7 @@
 
 ### [NodeJs](https://nodejs.org/en/)
 
-`Expected version: 14.20.1`
+`Expected version: 16.14.0`
 
 ### [Serverless CLI](https://www.serverless.com/framework/docs/getting-started)
 
@@ -35,5 +35,5 @@ yarn develop
 You can debug your function using `invoke` locally. [Check the documentation](https://www.serverless.com/framework/docs/getting-started)
 
 ```
-debug:hello
+yarn debug:hello
 ```
